@@ -6,13 +6,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 interface PDFViewerProps {
   pdfSource: string;
-  height: string;
   downloadFileName?: string;
 }
 
 const PDFViewer: React.FC<PDFViewerProps> = ({
   pdfSource,
-  height,
   downloadFileName,
 }) => {
   const [numPages, setNumPages] = useState<number>(0);
@@ -89,8 +87,6 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
       style={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        maxHeight: height,
       }}
     >
       <div

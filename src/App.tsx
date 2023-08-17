@@ -4,7 +4,7 @@ import PDFViewer from './PDFReader'
 function App() {
   return (
     <>
-      <PDFViewer pdfSource="Cotización 1699_Firmado.pdf" height="700px" downloadFileName="Cotización 1699_Firmado.pdf" />
+      <PDFViewer pdfSource="Cotización 1699_Firmado.pdf"  downloadFileName="Cotización 1699_Firmado.pdf" />
     </>
   )
 }
